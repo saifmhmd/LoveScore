@@ -238,7 +238,7 @@ footer {
 
     input {
         padding: 12px;
-        /* font-size: 1rem; */
+        font-size: 1rem;
     }
 
     button {
@@ -266,19 +266,6 @@ footer {
 
     .title {
         font-size: 1.2rem;
-    }
-
-    input {
-        padding: 12px;
-        /* font-size: 1rem; */
-    }
-
-    button {
-        padding: 6px;
-    }
-
-    footer {
-        margin-top: 25%;
     }
 }
 

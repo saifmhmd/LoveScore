@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovescore</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/fdc95a4edb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100..800&family=Archivo:ital,wght@0,100..900;1,100..900&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Epilogue:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:wght@100..900&family=Kalnia+Glaze:wght@100..700&family=Manrope:wght@200..800&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <!-- <img class="logo" src="./assets/logo.png" alt=""> -->
+        <h3 class="lovescore">Lovescore.</h3>
+        <!-- <i class="fa-solid fa-heart"></i> -->
+
+        <button class="readme-btn">Read me</button>
+    </nav>
+
+    <div id="container">
+        <h1 class="title">Hmm, Lets see <br>
+            how much you guys love each other.
+        </h1>
+        <div class="input-container">
+            <input type="text" id="yourName" placeholder="Enter Your Name" required>
+            <input type="text" id="theirName" placeholder="Enter Their Name" required>
+            <button onclick="calculateLove()">Calculate <i class="fa-solid fa-heart-circle-bolt"></i></button>
+        </div>
+    </div>
+
+    <div id="progressContainer" style="display:none;">
+        <h3>Calculating your lovescore, please wait...</h3>
+        <div class="progressBarBackground">
+          <div class="progressBarFill" id="progressBar"></div>
+        </div>
+        <p id="progressText">0%</p>
+    </div>  
+
+    <div id="resultContainer" style="display:none;">
+        <div class="heart"><i class="fa-solid fa-heart"></i></div>
+        <h2 id="resultText"></h2>
+        <p id="quoteText"></p>
+    </div>
+
+    <footer>
+        made with love by saifmhmd.
+    </footer>
+    
+    <script src="index.js"></script>
+</body>
+</html>

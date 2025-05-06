@@ -183,7 +183,7 @@ footer {
     }
 
     .title {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 
     input {
@@ -200,17 +200,9 @@ footer {
         width: 250px;
     }
 
-    .title {
-        font-size: 1.2rem;
-    }
-
     input {
         padding: 12px;
         /* font-size: 1rem; */
-    }
-
-    button {
-        padding: 6px;
     }
 
     footer {
@@ -219,10 +211,6 @@ footer {
 }
 
 @media(max-width: 425px) {
-    .lovescore {
-        font-size: 1.2rem;
-    }
-
     .readme-btn {
         padding: 7px;
     }
@@ -233,7 +221,7 @@ footer {
     }
 
     .title {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     input {
@@ -241,32 +229,25 @@ footer {
         font-size: 1rem;
     }
 
-    button {
-        padding: 6px;
-    }
-
-    footer {
+    /* footer {
         margin-top: 25%;
-    }
+    } */
 }
 
 @media(max-width: 320px) {
-    .lovescore {
-        font-size: 1.2rem;
-    }
-
     .readme-btn {
         padding: 7px;
     }
 
     #container {
         width: 210px;
-        margin-top: 70px;
+        margin-top: 40px;
     }
 
     .title {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
+
 }
 
 

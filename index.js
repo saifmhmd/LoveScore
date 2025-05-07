@@ -5,6 +5,11 @@ function calculateLove() {
     const yourName = firstLetter + remainingLetter;
     const theirName = document.getElementById("theirName").value.trim();
 
+    if (!name || !theirName) {
+        alert("Please Enter Both Names.");
+        return;
+    }
+
     document.getElementById("container").style.display = "none";
     document.getElementById("progressContainer").style.display = "flex";
 
@@ -21,7 +26,7 @@ function calculateLove() {
         progressBar.style.width = width + "%";
         progressText.textContent = width + "%";
         }
-    }, 10); // 5 seconds total
+    }, 40); // 5 seconds total
 }
 
 function showResult(name) {

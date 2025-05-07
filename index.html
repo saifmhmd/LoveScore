@@ -21,29 +21,32 @@
         <button class="readme-btn">Read me</button>
     </nav>
 
-    <div id="container">
-        <h1 class="title">Hmm, Lets see <br>
-            how much you guys love each other.
-        </h1>
-        <div class="input-container">
-            <input type="text" id="yourName" placeholder="Enter Your Name" required>
-            <input type="text" id="theirName" placeholder="Enter Their Name" required>
-            <button onclick="calculateLove()">Calculate <i class="fa-solid fa-heart-circle-bolt"></i></button>
+    <div class="wraper">
+        <div id="container">
+            <h1 class="title">Hmm, Lets see <br>
+                how much you guys love each other.
+            </h1>
+            <div class="input-container">
+                <input type="text" id="yourName" placeholder="Enter Your Name" required>
+                <input type="text" id="theirName" placeholder="Enter Their Name" required>
+                <button onclick="calculateLove()">Calculate <i class="fa-solid fa-heart-circle-bolt"></i></button>
+            </div>
         </div>
-    </div>
 
-    <div id="progressContainer" style="display:none;">
-        <h3>Calculating your lovescore, please wait...</h3>
-        <div class="progressBarBackground">
-          <div class="progressBarFill" id="progressBar"></div>
+        <div id="progressContainer" style="display:none;">
+            <h3>Calculating your lovescore, please wait...</h3>
+            <div class="progressBarBackground">
+            <div class="progressBarFill" id="progressBar"></div>
+            </div>
+            <p id="progressText">0%</p>
+        </div>  
+
+        <div id="resultContainer" style="display:none;">
+            <div class="heart"><i class="fa-solid fa-heart"></i></div>
+            <h2 id="resultText"><span id="percent"></span></h2>
+            <p id="quoteText"></p>
+            <h4 class="retry">retry</h4>
         </div>
-        <p id="progressText">0%</p>
-    </div>  
-
-    <div id="resultContainer" style="display:none;">
-        <div class="heart"><i class="fa-solid fa-heart"></i></div>
-        <h2 id="resultText"></h2>
-        <p id="quoteText"></p>
     </div>
 
     <footer>
